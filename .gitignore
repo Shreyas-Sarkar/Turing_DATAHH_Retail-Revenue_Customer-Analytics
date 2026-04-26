@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.DS_Store
+*.xlsx
+*.parquet
+*.csv
+# Ignore data but keep directories
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
