@@ -3,8 +3,7 @@
 The interactive Tableau dashboard for the UK Online Retail analytics project is hosted on Tableau Public.
 
 ## Dashboard URL
-**[UK Online Retail Analytics Dashboard](https://public.tableau.com/)**
-*(Note: This is a placeholder link. The actual dashboard will be published here upon finalization.)*
+**[UK Online Retail Analytics Dashboard](https://public.tableau.com/views/UKRetailAnalyticsDashboardRevenueReturnsandCustomerInsights/UKRetailAnalyticsDashboardRevenueReturnsandCustomerInsights?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Key Features
 - **Interactive Filters**: Date (Year, Month), Country, Product category/SKU.

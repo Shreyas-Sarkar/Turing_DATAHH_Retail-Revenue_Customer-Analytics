@@ -55,12 +55,12 @@ An interactive dashboard was constructed to allow stakeholders to drill down dyn
 
 ### Dashboard Previews
 > **Note:** Manual screenshot population is required prior to final submission. Place images in `tableau/screenshots/`.
-- ![Full Dashboard](tableau/screenshots/dashboard_full.png)
-- ![Revenue Trend](tableau/screenshots/dashboard_revenue_trend.png)
-- ![Revenue by Country](tableau/screenshots/dashboard_revenue_country.png)
-- ![Pareto Products](tableau/screenshots/dashboard_pareto.png)
-- ![Return Rate KPI](tableau/screenshots/dashboard_return_rate.png)
-- ![Customer Segmentation](tableau/screenshots/dashboard_customer_segmentation.png)
+- ![Full Dashboard](tableau/screenshots/01_dashboard_full.png)
+- ![Revenue Trend](tableau/screenshots/02_revenue_trend.png)
+- ![Revenue by Country](tableau/screenshots/03_revenue_by_country.png)
+- ![Pareto Products](tableau/screenshots/04_pareto_products.png)
+- ![Return Rate KPI](tableau/screenshots/05_return_rate_kpi.png)
+- ![Customer Segmentation](tableau/screenshots/06_customer_segmentation.png)
 
 ---
 *Created for Industry Capstone Project 2. This repository evaluates Registered Customer behavior strictly.*
