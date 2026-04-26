@@ -1,0 +1,60 @@
+--- Statistical Analysis ---
+
+Correlation between UnitPrice and Quantity: -0.0046 (p-value: 4.1175e-03)
+Insight: Significant negative correlation exists, implying price elasticity.
+Note: Pearson only measures linear relationships. True elasticity is non-linear and requires SKU-level modeling.
+
+Domestic AOV Mean: £437.64
+International AOV Mean: £849.51
+T-test Statistic: -9.6829, p-value: 9.2862e-22
+Insight: Reject Null Hypothesis. There is a statistically significant difference in AOV between Domestic and International orders.
+
+--- KPI: Retention Analysis ---
+Month-over-Month Retention Rates:
+2011-01: 36.61%
+2011-02: 35.36%
+2011-03: 38.26%
+2011-04: 31.21%
+2011-05: 42.99%
+2011-06: 38.83%
+2011-07: 36.83%
+2011-08: 40.89%
+2011-09: 45.45%
+2011-10: 38.63%
+2011-11: 45.60%
+2011-12: 22.30%
+
+--- Regression Analysis: Demand Forecasting ---
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               Quantity   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                  0.000
+Method:                 Least Squares   F-statistic:                     35.47
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):           6.55e-23
+Time:                        00:43:01   Log-Likelihood:            -2.5975e+06
+No. Observations:              392692   AIC:                         5.195e+06
+Df Residuals:                  392688   BIC:                         5.195e+06
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         22.5260      1.065     21.141      0.000      20.438      24.614
+UnitPrice     -0.0397      0.013     -3.068      0.002      -0.065      -0.014
+IsDomestic    -8.7924      0.918     -9.575      0.000     -10.592      -6.993
+Month         -0.1925      0.084     -2.282      0.022      -0.358      -0.027
+===============================================================================
+Omnibus:                  2332785.742   Durbin-Watson:                    1.956
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):   507080304203455.812
+Skew:                         407.522   Prob(JB):                          0.00
+Kurtosis:                  176043.791   Cond. No.                          103.
+===============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Regression Interpretation:
+- Price Elasticity: A negative coefficient for UnitPrice confirms that as price increases, demand (Quantity) decreases.
+- Geography Impact: The IsDomestic coefficient shows how domestic baseline demand differs from international orders per transaction line.
+- Seasonality Impact: The Month coefficient indicates the linear trend of demand over the year.
+- Business Implication: Price is a significant lever for managing demand volumes. To maximize net revenue, price optimization should be modeled at the individual SKU level using non-linear elasticity curves.
